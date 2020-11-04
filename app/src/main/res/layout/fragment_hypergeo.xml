@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bz.hemmers.android.statistik.HypergeoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/hypergeo_nbig"
+            android:hint="Gesamtheit N" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/hypergeo_m"
+            android:hint="Günstige Elemente M" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/hypergeo_nsmall"
+            android:hint="Stichprobe n" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/hypergeo_k"
+            android:hint="Anzahl k" />
+
+        <Button
+            android:text="Abschicken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hypergeo_button" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hypergeo_ergebnis"
+            android:text="Ergebnis"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</FrameLayout>
